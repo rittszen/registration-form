@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Professional Form</title>
+  <link rel="stylesheet" href="professional.css">
+
+<styl><video autoplay muted loop play inline id="bg-video">
+               
+            <source src="./art.mp4" type="video/mp4">
+            </video>
+            </styl>
+            </head>
+
+<body>
+<div class="container">
+  <h2>Registration Form</h2>
+
+  <form onsubmit="return validateForm()">
+   
+    <input type="text" id="name" placeholder="Enter your name">
+    <small id="nameError"></small>
+
+    <input type="email" id="email" placeholder="Enter your email">
+    <small id="emailError"></small>
+
+    <input type="password" id="password" placeholder="Enter password">
+    <small id="passError"></small>
+
+    <select id="city">
+      <option value="">Select City</option>
+      <option>Islamabad</option>
+      <option>Rawalpindi</option>
+      <option>Lahore</option>
+    </select>
+    <small id="cityError"></small>
+
+    <div class="group">
+      <label>Gender:</label><br>
+      <input type="radio" name="gender"> Male
+      <input type="radio" name="gender"> Female
+    </div>
+    <small id="genderError"></small>
+
+    <div class="group">
+      <label>Hobbies:</label><br>
+      <input type="checkbox" name="hobbies"> Reading
+      <input type="checkbox" name="hobbies"> Gaming
+      <input type="checkbox" name="hobbies"> Sports
+    </div>
+    <small id="hobbyError"></small>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
+
+<script src="professional.js"></script>
+</body>
+</html>
